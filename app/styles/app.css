@@ -1,0 +1,111 @@
+@import url("//fonts.googleapis.com/css?family=Raleway:100");
+
+body {
+  background: white;
+  color: black;
+  font-size: 62.5%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  text-align: center;
+  line-height: 31px;
+  width: auto;
+}
+
+/* Font-size 36, 24, 18, 14px */
+h1 {
+  font-size: 4.8em;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 3.6em;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 2.4em;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 1.8em;
+  font-weight: 100;
+}
+
+
+div {
+  font-weight: 100;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#history-drop-down {
+  width: 100%;
+  height: 60px;
+}
+
+.search-history {
+  float: right;
+  margin-top: 30px;
+  margin-right: 10%;
+}
+
+#gSearchbox {
+  width: 100%;
+}
+
+.search-bar {
+  box-sizing:border-box;
+  width: 80%;
+  border-radius: 8px;
+  margin: auto;
+  padding: 8px;
+  background: gray;
+  color: WhiteSmoke;
+}
+
+input[type="text"]{
+  border: none;
+  border-radius: 8px;
+  width: 90%;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 1.4em;
+  background: transparent;
+  color: WhiteSmoke;
+  font-weight: 200;
+}
+
+
+.search-btn {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: WhiteSmoke;
+  font-size: 1.4em;
+  background-image: url(/assets/images/search-btn-icon.png);
+  background-repeat: no-repeat;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+  background: WhiteSmoke;
+}
+
+#twelveHourForecast {
+  text-align: center;
+}
+
+.column {
+  font-size: 2.4em;
+  display: inline-block;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin:9px;
+  background:#eaebec;
+  font-size:1.0em;
+  border-radius: 8px;
+  padding: 4px;
+}
+
