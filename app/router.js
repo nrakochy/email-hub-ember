@@ -6,6 +6,6 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
-  this.resource("email-finder", { path: "/"});
-  this.route('user');
+  this.route("email-finder", { path: "/"});
+  this.route("user", { path: "/:username" });
 });
