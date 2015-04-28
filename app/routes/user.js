@@ -5,6 +5,8 @@ export default Ember.Route.extend({
     return ajax({
       url: "https://api.github.com/users/" + params.username + "/events/public",
       type: "get"
-    });
+    }).then(function(responses){
+      return responses;
+    })
   }
 });
