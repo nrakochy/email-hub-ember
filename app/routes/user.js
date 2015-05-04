@@ -6,7 +6,25 @@ export default Ember.Route.extend({
       url: "https://api.github.com/users/" + params.username + "/events/public",
       type: "get"
     }).then(function(responses){
-      return responses;
-    })
+      var emails = [];
+      var records = [];
+      responses.forEach(function(response){
+        var recordArr = response.payload.commits;
+        if (recordArr !== undefined && typeof(recordArr === Array)){
+          records.push(recordArr[0]);
+        }
+      });
+
+      records.forEach(function(record){
+        var respObj = record.author.email;
+        if (typeof(respObj !== undefined)){
+          if (emails.indexOf(respObj) === -1){
+            emails.push(respObj);
+          }
+        }
+      });
+      console.log(emails);
+      return emails;
+    });
   }
 });
