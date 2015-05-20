@@ -18,6 +18,7 @@ export default Ember.Route.extend({
       var emails = [];
       records.forEach(function(record){
         var respObj = record.author.email;
+
         /* Email exists */
         if (typeof(respObj !== undefined)){
           /* Email is unique */
@@ -28,6 +29,6 @@ export default Ember.Route.extend({
       });
       console.log(emails);
       return emails;
-    })
+    });
   }
 });
