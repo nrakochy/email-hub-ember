@@ -12,8 +12,8 @@ export default Ember.Route.extend({
         if (recordArr !== undefined && typeof(recordArr === Array)){
           records.push(recordArr[0]);
         }
-      })
-      return records
+      });
+      return records;
     }).then(function(records){
       var emails = [];
       records.forEach(function(record){
@@ -27,7 +27,6 @@ export default Ember.Route.extend({
           }
         }
       });
-      console.log(emails);
       return emails;
     });
   }
